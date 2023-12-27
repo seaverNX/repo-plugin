@@ -1,0 +1,113 @@
+<?jelly escape-by-default='true'?>
+<j:jelly
+	xmlns:j="jelly:core"
+	xmlns:st="jelly:stapler"
+	xmlns:d="jelly:define"
+	xmlns:l="/lib/layout"
+	xmlns:t="/lib/hudson"
+	xmlns:f="/lib/form">
+
+	<f:entry title="Manifest Repository Url" field="manifestRepositoryUrl">
+		<f:textbox/>
+	</f:entry>
+
+	<f:advanced>
+
+		<f:entry title="Manifest Branch" field="manifestBranch">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Manifest File" field="manifestFile">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Group" field="manifestGroup">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Platform" field="manifestPlatform">
+			<f:textbox/>
+		</f:entry>
+		
+		<f:entry title="IgnoreChanges" field="ignoreProjects">
+			<f:textarea rows="3" />
+		</f:entry>
+
+		<f:entry title="Destination Directory" field="destinationDir">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Repo Url" field="repoUrl">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Repo Branch" field="repoBranch">
+		    <f:textbox/>
+		</f:entry>
+
+		<f:entry title="Mirror Directory" field="mirrorDir">
+			<f:textbox/>
+		</f:entry>
+
+		<f:entry title="Jobs" field="jobs">
+			<f:textbox clazz="number"/>
+		</f:entry>
+
+		<f:entry title="Depth" field="depth">
+			<f:textbox clazz="number" />
+		</f:entry>
+
+		<f:entry title="Current Branch" field="currentBranch">
+			<f:checkbox default="true"/>
+		</f:entry>
+
+		<f:entry title="Sync manifest submodules" field="manifestSubmodules">
+			<f:checkbox default="false"/>
+		</f:entry>
+
+		<f:entry title="Fetch submodules" field="fetchSubmodules">
+			<f:checkbox default="false"/>
+		</f:entry>
+
+		<f:entry title="Reset first" field="resetFirst">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Clean first" field="cleanFirst">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Quiet" field="quiet">
+			<f:checkbox default="true"/>
+		</f:entry>
+
+		<f:entry title="Force Sync" field="forceSync">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="No tags" field="noTags">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Trace" field="trace">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Show all changes" field="showAllChanges">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Local Manifest" field="localManifest">
+			<f:textarea rows="10" />
+		</f:entry>
+
+		<f:entry title="No Clone Bundle" field="noCloneBundle">
+			<f:checkbox/>
+		</f:entry>
+
+		<f:entry title="Worktree" field="worktree">
+			<f:checkbox/>
+		</f:entry>
+
+	</f:advanced>
+</j:jelly>

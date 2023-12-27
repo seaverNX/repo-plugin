@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+<div>
+  This plugin allows use of <a href="https://gerrit.googlesource.com/git-repo">Repo</a> as
+  an SCM tool. A repo binary is required.
+</div>
